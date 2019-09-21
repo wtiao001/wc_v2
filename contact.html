@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Arimo:700|Lato:300,300i,400,400i,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="quote_icon.png"/>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <title>Winston Cho</title>
+</head>
+
+<body onload="startTime()">
+<div class="main-container">
+    <nav class="nav-wrap">
+        <h1><a href="index.html" class="nav-header">Winston Cho</a></h1>
+        <div class="item-wrap">
+            <h2>
+                <a href="index.html" class="nav-item">publications</a>
+            </h2>
+            <h2>
+                <a href="contact.html" class="nav-item">contact</a>
+            </h2>
+        </div>
+        <div class="time-wrap">
+            <div id="txt" class="time"></div>
+            <div id="display"></div>
+        </div>
+    </nav>
+    <div class="top-nav-wrap">
+       <h1 style="display: inline-block;"><a href="">Winston Cho</a></h1>
+        <div class="hamburger">
+            <div class="menu-button"></div>
+        </div>
+    </div>
+    <div class="menu">
+        <h2>
+            <a href="index.html" class="nav-item" style="margin-top: 70px;">publications</a>
+        </h2>
+        <h2>
+            <a href="contact.html" class="nav-item">contact</a>
+        </h2>
+        <div class="time-wrap">
+            <div id="txt-menu" class="time"></div>
+            <div id="display-menu"></div>
+        </div>
+    </div>
+
+
+    
+    
+    <div class="main-section-wrap">
+        <li>
+            <div class="info-wrap">
+                <h6>Although Singh acknowledged more defendants are being let go on conditional release or on their own recognizance, the response has largely depended on the judge hearing the arraignment. Some judges are skeptical about evidence presented by public defenders concerning their clients' ability to pay and set bail as they did before Humphrey.</h6>
+                <h6 style="margin-top: 15px">Although Singh acknowledged more defendants are being let go on conditional release or on their own recognizance, the response has largely depended on the judge hearing the arraignment. Some judges are skeptical about evidence presented by public defenders concerning their clients' ability to pay and set bail as they did before Humphrey. the response has largely depended on the judge hearing the arraignment. Some judges are skeptical about evidence presented by public defenders concerning their clients' ability to pay and set bail as they did before Humphrey.</h6>
+            </div>
+            <div class="info-wrap" style="margin-top: 30px">
+                <a href="mailto:" class="big-info">winstonscho@gmail.com</a>     <div class="big-info">909 720 5170</div>           
+            </div>
+            <div class="info-wrap" style="margin-top: 30px">
+                <a href="https://www.linkedin.com/in/winston-cho-b3448bab" class="links">linkedin</a>
+                <a href="https://twitter.com/winstonscho" class="links">twitter</a>
+                <a href="#" class="links">vimeo</a>          
+            </div>
+        </li>
+    </div> 
+</div>   
+</body>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+document.getElementById('txt-menu').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+    
+    if(h >= 23 && h <= 7){  
+      document.getElementById('display').innerHTML = "zzz...";
+   }
+   else if(h >= 7 && h < 9){
+         document.getElementById('display').innerHTML = "having coffee";
+    }
+    else if(h >= 9 && h < 11){
+         document.getElementById('display').innerHTML = "in the office";
+    }
+    else if(h >= 12 && h < 13){
+         document.getElementById('display').innerHTML = "out for lunch";
+    }
+    else if(h >= 14 && h < 19){
+         document.getElementById('display').innerHTML = "in the office";
+    }
+    else {
+        document.getElementById('display').innerHTML = "cruisin'"
+    }
+        if(h >= 23 && h <= 7){  
+      document.getElementById('display-menu').innerHTML = "zzz...";
+   }
+   else if(h >= 7 && h < 9){
+         document.getElementById('display-menu').innerHTML = "having coffee";
+    }
+    else if(h >= 9 && h < 11){
+         document.getElementById('display-menu').innerHTML = "in the office";
+    }
+    else if(h >= 12 && h < 13){
+         document.getElementById('display-menu').innerHTML = "out for lunch";
+    }
+    else if(h >= 14 && h < 19){
+         document.getElementById('display-menu').innerHTML = "in the office";
+    }
+    else {
+        document.getElementById('display-menu').innerHTML = "cruisin'"
+    }
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+    
+// MENU BUTTON 
+        $('.menu a').click(function() {
+            $(".menu").removeClass("open");
+            $('.menu-button').toggleClass('active');
+        });
+// hamburger menu script
+    $(document).ready(function(){
+        $('.hamburger').click(function(){
+            $('.menu-button').toggleClass('active');
+        }); 
+        $('.hamburger').click(function(){
+            $('.nav').toggleClass('active');
+        }); 
+        $('.hamburger').click(function(){
+            $('.menu').toggleClass('open');
+        }); 
+    });
+</script>
