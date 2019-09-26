@@ -38,12 +38,20 @@ h5 {
     font-weight: 400;
     margin: 30px 0 0;
 }
+h7 {
+    display: block;
+    font-family: 'Lato', serif;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 30px 0 0;
+}
 p {
     font-family: 'Lato', serif;
     font-size: 17px;
     color: black;
     opacity: .5;
-    margin: 15px 0;
+    margin: 20px 0;
+    line-height: 140%;
 }
 
 .ital {
@@ -79,6 +87,7 @@ p {
     width: 100%;
     box-sizing: border-box;
     padding: 0 7%;
+    padding-bottom: 10%;
 }
 
 /* NAVIGATION */
@@ -218,7 +227,7 @@ p {
     color: black;
 }
 .work-content {
-    width: 75%;
+    width: 70%;
     display: none;
     opacity: 0;
     transition: opacity .5s ease;
@@ -262,35 +271,63 @@ p {
 }
 
 .main-section-wrap li:nth-child(2) {
-	animation-delay: .05s;
+	animation-delay: .03s;
 }
 .main-section-wrap li:nth-child(3) {
-	animation-delay: .1s;
+	animation-delay: .06s;
 }
 .main-section-wrap li:nth-child(4) {
-	animation-delay: .15s;
+	animation-delay: .09s;
 }
 .main-section-wrap li:nth-child(5) {
-	animation-delay: .2s;
+	animation-delay: .12s;
 }
 .main-section-wrap li:nth-child(6) {
-	animation-delay: .25s;
+	animation-delay: .15s;
 }
 .main-section-wrap li:nth-child(7) {
-	animation-delay: .3s;
+	animation-delay: .18s;
 }
 .main-section-wrap li:nth-child(8) {
-	animation-delay: .35s;
+	animation-delay: .21s;
 }
 .main-section-wrap li:nth-child(9) {
-	animation-delay: .4s;
+	animation-delay: .24s;
 }
 .main-section-wrap li:nth-child(10) {
-	animation-delay: .45s;
+	animation-delay: .27s;
 }
 .main-section-wrap li:nth-child(11) {
-	animation-delay: .5s;
+	animation-delay: .30s;
 }
+.main-section-wrap li:nth-child(12) {
+	animation-delay: .33s;
+}
+.main-section-wrap li:nth-child(13) {
+	animation-delay: .36s;
+}
+.main-section-wrap li:nth-child(14) {
+	animation-delay: .39s;
+}
+.main-section-wrap li:nth-child(15) {
+	animation-delay: .42s;
+}
+.main-section-wrap li:nth-child(16) {
+	animation-delay: .45s;
+}
+.main-section-wrap li:nth-child(17) {
+	animation-delay: .48s;
+}
+.main-section-wrap li:nth-child(18) {
+	animation-delay: .51s;
+}
+.main-section-wrap li:nth-child(19) {
+	animation-delay: .54s;
+}
+.main-section-wrap li:nth-child(20) {
+	animation-delay: .57s;
+}
+
 @keyframes fadeIn {
 	from {
 		opacity: 0;
