@@ -340,7 +340,7 @@ p.outline {
 }
 h9 span {
     opacity: 0;
-    animation: fadeInColor .3s ease-in both;
+    animation: fadeInColor .6s ease-in both;
 }
 .main-section-wrap li:nth-child(2) {
 	animation-delay: .03s;
